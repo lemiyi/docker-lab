@@ -1,0 +1,4 @@
+Ce repo est pour me plonger dans la pratique de docker, des differents elements en allant des choses elementaires aux notions les plus avancées
+
+######PARTIE 1: LES PREMIERS PAS AVEC DOCKER#######
+

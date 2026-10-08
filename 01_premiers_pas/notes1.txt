@@ -1,0 +1,16 @@
+
+######PARTIE 1: LES PREMIERS PAS AVEC DOCKER#######
+
+EXECICE: NGINX ET LA NATURE EPHEMERE DES CONTENEURS
+
+1-Lancer un serveur nginx:docker run -d --name web -p 8080:80 nginx:1.27-apline
+2-Verifier que le serveur tourne:docker ps. Ouvrir http://localhost:8080 ou curl http://localhost:8080
+3-Naviguer à l'intérieur du conteneur: docker exec -it web sh.
+4-Modifier la page par defaut de nginx: echo '<h1>Bonjour docker</h1>' > /usr/share/nginx/html/index.html puis exit
+5-Recharger la page pour voir les changements appliqués
+6-Supprimer le contenur: docker rm -f web, puis le relancer avec la meme commande qu'à l'étape 1
+7-Recharger la page: la modification a disparu
+
+Cet exercice montre que le conteneur disparait avec son contenu lors de sa suppression
+
+
